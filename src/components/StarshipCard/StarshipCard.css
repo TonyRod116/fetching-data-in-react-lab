@@ -1,0 +1,47 @@
+.starship-card {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(241, 196, 15, 0.2);
+  padding: 1.5rem;
+  margin: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid #f1c40f;
+  backdrop-filter: blur(5px);
+}
+
+.starship-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(241, 196, 15, 0.4);
+  border-color: #f39c12;
+}
+
+.starship-name {
+  color: #f1c40f; /* Star Wars yellow */
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(241, 196, 15, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.starship-details {
+  color: #ecf0f1;
+}
+
+.starship-details p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(241, 196, 15, 0.2);
+  padding-bottom: 0.25rem;
+}
+
+.starship-details p:last-child {
+  border-bottom: none;
+}
+
+.starship-details strong {
+  color: #f1c40f;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(241, 196, 15, 0.3);
+} 

@@ -1,0 +1,58 @@
+.starship-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.starships-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.starship-li {
+  margin: 0;
+  padding: 0;
+}
+
+.loading,
+.error,
+.no-starships {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #f1c40f; /* Star Wars yellow */
+  text-shadow: 0 0 8px rgba(241, 196, 15, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  border: 1px solid #f1c40f;
+}
+
+.loading {
+  color: #f1c40f;
+}
+
+.error {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.no-starships {
+  color: #95a5a6;
+  border-color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+  .starships-ul {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .starship-list {
+    padding: 0.5rem;
+  }
+} 
